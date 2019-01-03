@@ -1,0 +1,9 @@
+AG ((!x & !y & !z) -> AX(!x & !y & z))
+AG ((!x & !y & z) -> AX(!x & y & !z))
+AG ((!x & y & !z) -> AX(!x & y & z))
+AG ((!x & y & z) -> AX(x & !y & !z))
+AG ((x & !y & !z) -> AX(x & !y & z))
+AG ((x & !y & z) -> AX(x & y & !z))
+AG ((x & y & !z) -> AX(x & y & z))
+AG ((x & y & z) ->AX(!x & !y & !z))
+!x & !y & !z

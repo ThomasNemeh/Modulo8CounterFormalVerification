@@ -1,0 +1,28 @@
+NAME Modulo8Bug
+VAR
+  x    : boolean;
+  y    : boolean;
+  z    : boolean;
+INIT
+  x & y & z;
+
+RULES
+  !z :
+	z := true
+
+  z & !y:
+	z := false; y := true
+
+  z & y & x:
+	z := false; y := false; x := false
+
+  z & y & !x:
+	z := false; y := false; x := true  
+
+  
+
+  
+
+  	 
+
+	      
